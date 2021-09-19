@@ -1,0 +1,10 @@
+html {
+	background-color: #120E14 !important;
+}
+
+.terminal {
+    --size: 1.5;
+    --background: #120E14;
+    max-width: 950px;
+    margin: 0 auto;
+}
