@@ -1,15 +1,15 @@
 figlet.defaults({ fontPath: 'https://unpkg.com/figlet/fonts/' });
 figlet.preloadFonts(['Standard', 'Poison'], ready);
 
-var description = `You are in kumafdo's terminal. Type 'help' to get started`;
+var description = `Welcome all fellow humans and bots to kumafdo's site. [[;rgba(255,255,255,0.5);]Type 'help' to get started`;
 
 var help = ` 
 Wow, I thought the only people who would visit here would be bots and spammers, guess I was wrong. Just type any of the commands below to get some more info.
 
 You can even type a few letters and press [tab] to autocomplete.
 
-[[;rgba(255,255,255,0.99);]ls \t\t\t\t\t\t[[;rgba(255,255,255,0.5);]show files in a directory
-[[;rgba(255,255,255,0.99);]cat [[;rgba(255,255,255,0.5);]FILENAME \t\t\t[[;rgba(255,255,255,0.5);]show files in a directory
+[[;rgba(255,255,255,0.99);]ls \t\t\t\t\t\t[[;rgba(255,255,255,0.5);]show files in the current directory
+[[;rgba(255,255,255,0.99);]cat [[;rgba(255,255,255,0.5);]FILENAME \t\t\t[[;rgba(255,255,255,0.5);]display content of FILENAME in window
 [[;rgba(255,255,255,0.99);]clear \t\t\t\t\t[[;rgba(255,255,255,0.5);]clear current window
 `;
 
