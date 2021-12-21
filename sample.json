@@ -1,0 +1,4 @@
+{
+    "backend": [ "fastapi", "nodejs"],
+    "frontend": ["vueJs"]
+}

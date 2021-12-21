@@ -1,10 +1,11 @@
 figlet.defaults({ fontPath: 'https://unpkg.com/figlet/fonts/' });
 figlet.preloadFonts(['Standard', 'Poison'], ready);
 
-var description = `Welcome all fellow humans and bots to kumafdo's site. [[;rgba(255,255,255,0.5);]Type 'help' to get started`;
+var description = `Welcome all fellow humans and bots to my website. [[;rgba(255,255,255,0.5);]Type 'help' to get started`;
 
 var help = ` 
-Wow, I thought the only people who would visit here would be bots and spammers, guess I was wrong. Just type any of the commands below to get some more info.
+Wow, I thought the only people who would visit here would be bots and spammers,
+guess I was wrong. Just type any of the commands below to get some more info.
 
 You can even type a few letters and press [tab] to autocomplete.
 
@@ -30,19 +31,29 @@ My go-to language is [[;rgba(255,255,255,0.99);]Python,[[;rgba(255,255,255,0.5);
 I'm highly motivated, disciplined and passionate about clean code, Also I'm learning
 any and everything that happens to come my way.
 
-[[;rgba(255,255,255,0.2);]Nowadays I'm developing a method to order pizza for free... I wish!
+Nowadays I'm developing a method to order pizza for free... I wish!
 
 [[;rgba(255,255,255,0.5);]I'm currently working at [[!;;;;https://primesens.com/]Primesens], where we develop highly scalable data-driven
 solutions.
 `;
 
 var skills = ` 
-Backend Development - FastAPI, ExpressJS, Flask
-Cloud Computing - AWS, GCP, Azure
-Databases and Cache - SQL, NoSQL, GraphDB, Redis
-Message Queues - Kafka, RabbitMq, ZeroMq
-Version Control - git
-DevOps - Docker, Kubernetes, CI/CD
+{
+    "language": [ "python", "javascript", "go" ]
+    "backend": [ "fastapi", "expressjs" ],
+    "database": [ "sql", "nosql", "graphdb" ],
+    "source_control": [ "git" ],
+    "cloud_paltform": [ "gcp", "aws", "azure" ],
+    "other": [ "docker", "k8s", "ci-cd" ]
+}
+`;
+
+var contact = ` 
+## Contact Details
+
+- email: mklmfernando@gmail.com
+- linkedin: https://www.linkedin.com/in/kumafdo/
+- github: https://github.com/kumaF
 `;
 
 function ready() {
@@ -63,6 +74,10 @@ function ready() {
                 case 'cat':
                     if (cmd.args[0] === 'profile.txt') {
                         this.echo(profile)
+                    } else if (cmd.args[0] === 'skills.json') {
+                        this.echo(skills)
+                    } else if (cmd.args[0] === 'contact.md') {
+                        this.echo(contact)
                     } else {
                         this.error(`cat: ${cmd.args[0]}: No such file or directory`);
                     }
